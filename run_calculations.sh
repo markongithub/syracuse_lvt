@@ -65,7 +65,6 @@ SELECT
 FROM properties
 -- Why are there 370 empty rows?
 WHERE FullName != " "
-  AND LandUse = "Single Family"
 -- I think this is more interesting than pure LVT because all pure LVT tells you
 -- is "properties that pay no tax should pay tax".
 ORDER BY tax_hike_from_lvt_with_exemptions;
